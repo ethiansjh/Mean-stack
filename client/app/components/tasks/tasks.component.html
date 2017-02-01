@@ -1,0 +1,57 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>{{pageTitle}}</h2>
+    </div>
+    <div class="panel-body">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-inverse">
+                <tr>
+                    <th>Compnos</th>
+                    <th>Nature Code</th>
+                    <th>Incident Type Description</th>
+                    <th>Main task Code</th>
+                    <th>Reporting district</th>
+                    <th>Reporting Area</th>
+                    <th>From date</th>
+                    <th>Weapon Type</th>
+                    <th>Shooting</th>
+                    <th>Domestic</th>
+                    <th>Shift</th>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Day Week</th>
+                    <th>Ucrpart</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Street Name</th>
+                    <th>Xstreename</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor='let task of tasks'>
+                    <td>{{ task.compnos }}</td>
+                    <td>{{ task.naturecode }}</td>
+                    <td>{{ task.incident_type_description}}</td>
+                    <td>{{ task.main_crimecode}}</td>
+                    <td>{{ task.reptdistrict }}</td>
+                    <td>{{ task.reportingarea }}</td>
+                    <td>{{ task.fromdate | date: Date: 'ddMMYY'}}</td>
+                    <td>{{ task.weapontype }}</td>
+                    <td>{{ task.shooting }}</td>
+                    <td>{{ task.domestic }}</td>
+                    <td>{{ task.shift }}</td>
+                    <td>{{ task.year }}</td>
+                    <td>{{ task.month }}</td>
+                    <td>{{ task.day_week }}</td>
+                    <td>{{ task.ucrpart }}</td>
+                    <td>{{ task.x }}</td>
+                    <td>{{ task.y }}</td>
+                    <td>{{ task.streetname }}</td>
+                    <td>{{ task.xstreetname }}</td>
+                    <td>{{ task.location }}</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
